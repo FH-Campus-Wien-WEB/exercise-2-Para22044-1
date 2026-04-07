@@ -67,10 +67,10 @@ function putMovie() {
     - Send the movie data as JSON
   */
   const movie = getMovie();
-  const imbdID = movie.imdbID;
+  const imdbID = movie.imdbID;
 
   const xhr = new XMLHttpRequest();
-  xhr.open("PUT", "/movies/" + imbdID);
+  xhr.open("PUT", "/movies/" + imdbID);
   xhr.setRequestHeader("Content-Type", "application/json");
 
   xhr.onload = function () {
